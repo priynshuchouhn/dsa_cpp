@@ -1,0 +1,70 @@
+# Git ignore for a small C++ data-structures workspace
+# Ignore compiled object files and static/shared libraries
+*.o
+*.obj
+*.lo
+*.la
+
+# Ignore libraries and binaries
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+bin/
+build/
+cmake-build-*/
+
+# CMake files and build artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Debugging and profiling artifacts
+*.dSYM/
+*.su
+*.prof
+*.pdb
+core
+
+# Coverage
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Swap and backup files
+*~
+*.swp
+*.tmp
+*.temp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Misc
+compile_commands.json
+dist/
+.cache/
+# Ignore test output folders or custom local outputs
+test_output/
+
+# Node, Python, etc. (if any helper scripts exist)
+node_modules/
+__pycache__/
+
+# End of .gitignore
